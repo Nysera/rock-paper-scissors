@@ -1,0 +1,205 @@
+html {
+    font-family: sans-serif;
+    -ms-text-size-adjust: 100%;
+    --webkit-text-size-adjust: 100%;
+}
+html {
+    box-sizing: border-box;
+}
+html {
+    position: relative;
+    min-height: 100%;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    
+    color: #bec6cd;
+    font-family: 'lato', sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 1.5;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    background-color: #202C34;
+    min-height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+h1, h2 {
+    font-weight: normal;
+    margin: 0;
+}
+h1 {
+    color: #EEF0F2;
+    font-size: 32px;
+    font-weight: 700;
+}
+h2 {
+    color: #52AA8A;
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+header {
+    width: 100%;
+    text-align: center;
+    padding: 40px 20px;
+}
+.container {
+    max-width: 1000px;
+    padding: 60px 20px 0;
+    margin: 0 auto;
+}
+.scoreboard {
+    position: relative;
+    text-align: center;
+}
+.scoreboard h2 {
+    width: 100%;
+    margin: 0;
+}
+.scoreboard .scoreboard-wrapper {
+    margin: 40px 0;
+}
+.scoreboard .scoreboard-wrapper:before, .scoreboard .scoreboard-wrapper:after {
+    content: " ";
+    display: table;
+}
+.scoreboard .scoreboard-wrapper:after {
+    clear: both;
+}
+.scoreboard .scoreboard-wrapper .col {
+    position: relative;
+    float: left;
+    width: 33.33%;
+    padding: 0 20px;
+    margin: 0;
+}
+.scoreboard .scoreboard-wrapper .col .title {
+    color: #bec6cd;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    padding-bottom: 14px;
+    margin: 0;
+
+}
+.scoreboard .scoreboard-wrapper .col .text {
+    color: #EEF0F2;
+    font-size: 40px;
+    margin: 0;
+}
+.game .players-wrapper {
+    padding: 20px 0;
+}
+.game .players-wrapper .col {
+    position: relative;
+    float: left;
+    width: 33.33%;
+}
+.game .players-wrapper:before, .game .players-wrapper:after {
+    content: " ";
+    display: table;
+}
+.game .players-wrapper:after {
+    clear: both;
+}
+.game .players-wrapper .player .player-inner {
+    text-align: center;
+    border: 1px solid #98a4af;
+    padding: 20% 0;
+    transition: border-color 0.8s ease, background-color 0.8s ease;
+}
+.game .players-wrapper .player .player-inner svg {
+    display: inline-block;
+    vertical-align: middle;
+    height: 45px;
+    transform: rotate(90deg);
+}
+.game .players-wrapper .col .title {
+    color: #52AA8A;
+    font-size: 13px;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+    text-align: left;
+    padding-bottom: 14px;
+    margin: 0;
+}
+.game .players-wrapper .computer .computer-inner {
+    text-align: center;
+    border: 1px solid #98a4af;
+    padding: 20% 0;
+    transition: border-color 0.8s ease, background-color 0.8s ease;
+}
+.game .players-wrapper .computer .computer-inner svg {
+    display: inline-block;
+    vertical-align: middle;
+    height: 45px;
+    transform: rotate(90deg);
+}
+@media(min-width: 1000px) {
+    .game .players-wrapper .player .player-inner svg  {
+        height: 75px;
+    }
+    .game .players-wrapper .computer .computer-inner svg {
+        height: 75px;
+    }  
+}
+.game .players-wrapper .computer .title {
+    text-align: right;
+}
+.game .players-wrapper .verse .verse-wrapper {
+    color: #EEF0F2;
+    font-size: 40px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 38%;
+}
+@media(min-width: 600px) {
+    .game .players-wrapper .verse .verse-wrapper {
+        padding-top: 30%;
+    }
+}
+.game .button-wrapper {
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    margin: 40px auto;
+}
+.game .button-wrapper .intro {
+    margin-bottom: 24px;
+}
+.game .button-wrapper .btn {
+    display: inline-block;
+    vertical-align: middle;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    line-height: 1;
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    background-color: #52AA8A;
+    padding: 0;
+    margin: 0 14px;
+}
+.game .button-wrapper .btn svg {
+    display: inline-block;
+    vertical-align: middle;
+    width: 24px;
+    height: auto;
+    transform: rotate(90deg);
+    transition: transform 0.4s ease;
+}
+.game .button-wrapper .btn:hover svg{
+    transform: rotate(65deg);
+}
+.game .players-wrapper .player .winner, .game .players-wrapper .computer .winner {
+    border: 1px solid #52AA8A;
+    background-color: #52AA8A;
+}
