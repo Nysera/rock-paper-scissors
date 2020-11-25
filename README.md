@@ -1,1 +1,6 @@
-This is version 2 of my rock paper scissors project, instead of being console based I have now added a user interface.
+# The Odin Project: Foundations
+## Project: Rock Paper Scissors Game
+
+This is my implementation of the Rock Paper Scissors project from [The Odin Project](https://www.theodinproject.com/courses/foundations/lessons/rock-paper-scissors).
+
+**Live preview** can be found [here](https://nysera.github.io/rock-paper-scissors/).
